@@ -9,7 +9,9 @@ namespace TriangleChanina.Domain
 			EnsureTiangleExists(x, y, z);
 			
 			var s = (x + y + z) / 2.0;
-			return Math.Sqrt(s * (s - x) * (s - y) * (s - z));
+			var sqrt = Math.Sqrt(s * (s - x) * (s - y) * (s - z));
+
+			return sqrt;
 		}
 
 		public static void EnsureTiangleExists(double x, double y, double z)
